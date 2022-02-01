@@ -1,1 +1,1 @@
-admin para Artag shop en construccion
+primeros pasos
