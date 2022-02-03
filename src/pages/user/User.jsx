@@ -88,7 +88,7 @@ export default function User() {
               </div>
             </div>
             <div className="userUpdate">
-              <span className="userUpdateTitle">Edit</span>
+              <span className="userUpdateTitle">Editar</span>
               <form className="userUpdateForm">
                 <div className="userUpdateLeft">
                   <div className="userUpdateItem">

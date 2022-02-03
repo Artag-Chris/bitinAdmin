@@ -15,39 +15,44 @@ export default function WidgetLg() {
     const today = new Date();
     const dateToCompare = new Date(date);
     if (dateToCompare < today) {
-      return "red";
+      return "declined";
     } 
-    if (dateToCompare >= (today.setDate(today.getDate() - 30))) {
-      return "yellow";
-    }
-    if (dateToCompare >= today) {
-      return "green";
-    }
+   
+    
     else {
-      return "green";
+      return "approved";
     }
   }
+ 
   const date = new Date("2200-12-17T03:24:00");
   useEffect(() => {
     getColor(date);
     console.log(getColor(date));
   }, []);
+
+  const ButtonColor = ({ type }) => {
+    return <button className={"widgetLgButton " + type}>{type}</button>;
+  };
   
   const columns = [
     { field: "id", headerName: "id", width: 90,
 
   },
     { 
-      field: "FECHA_ESPERADA_ENTREGA",
-      headerName: "Fecha Esperada",
+      field: "Pioridad",
+      headerName: "Prioridad",
       width: 200,  renderCell: (params) => {
         return (
-          <div className="userListUser" style={{backgroundColor:`${getColor(params.row.FECHA_ESPERADA_ENTREGA)}`}}>
-            
-            {params.row.FECHA_ESPERADA_ENTREGA}
-          </div>
+         
+          <ButtonColor className="btn" type={getColor(params.row.FECHA_ESPERADA_ENTREGA)} />
+          
         );
       },
+    },
+    { 
+      field: "FECHA_ESPERADA_ENTREGA",
+      headerName: "fecha esperada",
+      width: 200, 
     },
     { field: "CEDULA", headerName: "Cedula", width: 200,
   },
