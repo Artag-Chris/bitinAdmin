@@ -5,16 +5,11 @@ import Topbar from '../../components/topbar/Topbar';
 import "./reports.css"
 function Reports() {
   return (
-    <div>
-      <Topbar />
-      <div className="container">
-
-        <Sidebar />
+   
         <div className='home'>
           <FeaturedService />
         </div>
-      </div>
-    </div>
+    
   );
 }
 

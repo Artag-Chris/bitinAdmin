@@ -43,6 +43,10 @@ function NewRegister() {
               <input type="text" placeholder="New York | USA" />
             </div>
             <div className="newUserItem">
+              <label>EPS</label>
+              <input type="text" placeholder="Nueva Eps" />
+            </div>
+            <div className="newUserItem">
               <label>Genero</label>
               <div className="newUserGender">
                 <input type="radio" name="gender" id="male" value="Masculino" />
@@ -82,7 +86,7 @@ function NewRegister() {
               </div>
             </div>
             <button className="newUserButton ">
-                <Link to="/">Crear</Link>
+                <Link to="/" className='text-decoration-none'>Crear</Link>
                 </button>
           </form>
         </div>

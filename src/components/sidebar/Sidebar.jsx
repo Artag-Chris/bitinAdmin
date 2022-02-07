@@ -40,7 +40,7 @@ export default function Sidebar() {
                 Gestion de Usuarios
               </li>
             </Link>
-            <Link to="/products" className="link">
+            <Link to="/solicitudes" className="link">
               <li className="sidebarListItem">
                 <Storefront className="sidebarIcon" />
                 Gestion de  Datos

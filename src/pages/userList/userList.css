@@ -1,5 +1,6 @@
 .userList {
   flex: 4;
+
 }
 
 .userListUser {
@@ -28,4 +29,8 @@
 .userListDelete{
     color: red;
     cursor: pointer;
+}
+
+.back--rosa{
+    background-color: rgb(222, 43, 207);
 }

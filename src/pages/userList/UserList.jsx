@@ -47,8 +47,8 @@ export default function UserList() {
       renderCell: (params) => {
         return (
           <>
-            <Link to={`/user/${params.row.id}`}  >
-              <button className="userListEdit">Editar</button>
+            <Link to={`/user/${params.row.id}`} className="back--rosa" >
+              <button className="userListEdit back--rosa ">Editar</button>
             </Link>
             <DeleteOutline
               className="userListDelete"
@@ -61,11 +61,8 @@ export default function UserList() {
   ];
 
   return (
-    <div>
-    <Topbar />
-    <div className="container">
-
-      <Sidebar />
+   
+      
       <div className="userList">
         <DataGrid
           rows={data}
@@ -75,7 +72,7 @@ export default function UserList() {
           checkboxSelection
         />
       </div>
-    </div>
-    </div>
+   
+    
       );
 }

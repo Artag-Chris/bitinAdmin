@@ -15,12 +15,12 @@ export default function WidgetLg() {
     const today = new Date();
     const dateToCompare = new Date(date);
     if (dateToCompare < today) {
-      return "declined";
+      return "alta";
     } 
    
     
     else {
-      return "approved";
+      return "baja";
     }
   }
  

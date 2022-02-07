@@ -18,6 +18,7 @@ import Login from "./pages/login/Login";
 import { useSelector } from "react-redux";
 import Reports from "./pages/reports/Reports";
 import NewRegister from "./pages/newRegister/NewRegister";
+import Solicitudes from "./pages/solicitudesAdmin/Solicitudes";
 
 function App() {
   const isAdmin = false
@@ -29,7 +30,13 @@ function App() {
         <Route path="/login">
           <Login />
         </Route>
+        <Route path="/newregister">
+              <NewRegister />
+            </Route>
         <Router>
+        <Topbar />
+          <div className="container">
+            <Sidebar />
           <Switch>
             <Route exact path="/">
               <Home />
@@ -46,19 +53,13 @@ function App() {
             <Route path="/reports">
               <Reports />
             </Route>
-            <Route path="/products">
-              <ProductList />
+            <Route path="/solicitudes">
+              <Solicitudes />
             </Route>
-            <Route path="/product/:productId">
-              <Product />
-            </Route>
-            <Route path="/newproduct">
-              <NewProduct />
-            </Route>
-            <Route path="/newregister">
-              <NewRegister />
-            </Route>
+           
+            
           </Switch>
+          </div>
         </Router>
       </Switch>
     </Router>

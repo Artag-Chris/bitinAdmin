@@ -13,3 +13,9 @@
     text-decoration: none;
     color: inherit;
 }
+.color--rosa{
+    color: rgb(222, 43, 207);
+}
+.back--rosa{
+    background-color: rgb(222, 43, 207) !important;
+}
