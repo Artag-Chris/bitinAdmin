@@ -27,39 +27,57 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/login">
-          <Login />
-        </Route>
-        <Route path="/newregister">
-              <NewRegister />
-            </Route>
+
+
         <Router>
-        <Topbar />
-          <div className="container">
-            <Sidebar />
-          <Switch>
-            <Route exact path="/">
+          <Route path="/newregister">
+            <NewRegister />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/">
+            <Topbar />
+            <div className="container">
+              <Sidebar />
               <Home />
-            </Route>
-            <Route path="/users">
+            </div>
+          </Route>
+          <Route path="/users">
+            <Topbar />
+            <div className="container">
+              <Sidebar />
               <UserList />
-            </Route>
-            <Route path="/user/:id">
+            </div>
+          </Route>
+          <Route path="/user/:id">
+            <Topbar />
+            <div className="container">
+              <Sidebar />
               <User />
-            </Route>
-            <Route path="/newUser">
+            </div>
+          </Route>
+          <Route path="/newUser">
+            <Topbar />
+            <div className="container">
+              <Sidebar />
               <NewUser />
-            </Route>
-            <Route path="/reports">
+            </div>
+          </Route>
+          <Route path="/reports">
+            <Topbar />
+            <div className="container">
+              <Sidebar />
               <Reports />
-            </Route>
-            <Route path="/solicitudes">
+            </div>
+          </Route>
+          <Route path="/solicitudes">
+            <Topbar />
+            <div className="container">
+              <Sidebar />
               <Solicitudes />
-            </Route>
-           
-            
-          </Switch>
-          </div>
+            </div>
+          </Route>
         </Router>
       </Switch>
     </Router>

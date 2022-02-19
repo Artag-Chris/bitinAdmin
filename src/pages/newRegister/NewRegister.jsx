@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function NewRegister() {
   return (<div className='container'>
       <div className="newUser">
-          <h1 className="newUserTitle">Nuevo Usuario</h1>
+          <h1 className="newUserTitle color--rosa">Nuevo Usuario</h1>
           <form className="newUserForm">
             <div className="newUserItem">
               <label>Nombre de Usuario</label>
@@ -85,8 +85,8 @@ function NewRegister() {
                
               </div>
             </div>
-            <button className="newUserButton ">
-                <Link to="/" className='text-decoration-none'>Crear</Link>
+            <button className="newUserButton back--rosa ">
+                <Link to="/" className='text-decoration-none text-light'>Crear</Link>
                 </button>
           </form>
         </div>

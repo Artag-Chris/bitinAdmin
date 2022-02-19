@@ -32,7 +32,7 @@ export default function Topbar() {
                 <Link className="nav-link" to="/newUser" >Gestion de Nuevos usuarios</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/products">Gestion de Datos</Link>
+                <Link className="nav-link" to="/solicitudes">Gestion de Datos</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/reports">Gestion de Reportes</Link>

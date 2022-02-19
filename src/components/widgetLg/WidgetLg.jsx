@@ -43,9 +43,9 @@ export default function WidgetLg() {
       headerName: "Prioridad",
       width: 200,  renderCell: (params) => {
         return (
-         
-          <ButtonColor className="btn" type={getColor(params.row.FECHA_ESPERADA_ENTREGA)} />
           
+          <ButtonColor className="btn" type={getColor(params.row.FECHA_ESPERADA_ENTREGA)} />
+         
         );
       },
     },
@@ -100,16 +100,15 @@ export default function WidgetLg() {
   };
   return (
     <div className="container p-0  h-50 ">
-    
     <div className="container d-flex col">
-      <div className="container d-flex ">
+      <div className="container d-flex " style={{ height: 400, width: '100%' }}>
         <DataGrid
-          className="container-fluid d-flex flex-column table-responsive p-0 m-0 "
+          className="container-fluid d-flex flex-column  p-0 m-0  table table-responsive-sm"
           rows={data}
           disableSelectionOnClick
-          columns={columns}
+          columns={columns} 
           pageSize={5}
-          
+          rowsPerPageOptions={[5]}
         />
       </div>
     </div>

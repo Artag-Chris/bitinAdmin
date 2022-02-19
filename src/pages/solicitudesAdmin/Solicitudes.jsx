@@ -11,7 +11,7 @@ function Solicitudes() {
         <div className="home ">
                 <div className='container'>
                     <div className="newUser">
-                        <h1 className="newUserTitle">Nueva Solicitud</h1>
+                        <h1 className="newUserTitle mt-3">Nueva Solicitud</h1>
                         <div className="dropdown">
                             <button className="btn btn-secondary dropdown-toggle back--rosa" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 Seleccione tipo de Solicitud

@@ -63,7 +63,7 @@ export default function UserList() {
   return (
    
       
-      <div className="userList">
+      <div className="userList" style={{ height: 400, width: '100%' }}>
         <DataGrid
           rows={data}
           disableSelectionOnClick
